@@ -1,0 +1,25 @@
+{
+  "name": "interview-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sylw3st3r/Interview-task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sylw3st3r/Interview-task/issues"
+  },
+  "homepage": "https://github.com/Sylw3st3r/Interview-task#readme",
+  "devDependencies": {
+    "c8": "^7.11.2",
+    "vitest": "^0.12.4"
+  }
+}
