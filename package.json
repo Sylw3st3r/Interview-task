@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Sylw3st3r/Interview-task#readme",
   "devDependencies": {
     "c8": "^7.11.2",
+    "prettier": "2.6.2",
     "vitest": "^0.12.4"
   }
 }
