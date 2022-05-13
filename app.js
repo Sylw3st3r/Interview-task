@@ -133,7 +133,6 @@ const getAllUserDistanceCombinations = (users) => {
                 user2:user2,
                 distance:getDistance(A, B)
             }
-            console.log(combination);
             allCombinations.push(combination);
         }
     }
