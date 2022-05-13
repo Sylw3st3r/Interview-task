@@ -3,25 +3,22 @@ import {test, expect, describe} from "vitest"
 
 
 describe("function - getDistance",()=>{
+
+    const a = {
+        lat: "-37.3159",
+        long: "81.1496"
+    }
+    const b = {
+        lat: "40.3467",
+        long: "-40.1310"
+    }
+
     test("Check if distance equals 0 when both points are in the same lat and long", () => {
-        const a = {
-            lat: "-37.3159",
-            long: "81.1496"
-        }
         expect(getDistance(a,a)).toBe(0);
     })
     
     test("Check if correct distance is found", () => {
-        const a = {
-            lat: "-37.3159",
-            long: "81.1496"
-        }
-        const b = {
-            lat: "40.3467",
-            long: "-40.1310"
-        }
-        expect(getDistance(a,b)).toBe(15012.08);
-      
+        expect(getDistance(a,b)).toBe(15012.08); 
     })
 })
 

@@ -15,8 +15,11 @@ const products = [
 ]
 
 describe("function - splitProductsIntoCategories",()=>{
-    test("Check if all categories were extracted into new data set, without duplicates", () => {
+    test("Check if all categories were extracted into new data set without duplicates", () => {
         expect(splitProductsIntoCategories(products)).toEqual([{name:"Shoes",totalPrice:0},{name:"Underwere",totalPrice:0}]);
+    })
+    test("If passed array's elements dont have category field then it should return empty array", () => {
+        expect(splitProductsIntoCategories([1,2,3,4])).toEqual([]);
     })
     
 })
@@ -24,5 +27,8 @@ describe("function - splitProductsIntoCategories",()=>{
 describe("function - countTotalPriceOfEachCategory",()=>{
     test("Check if value of all categories were calculated corectl", () => {
         expect(countTotalPriceOfEachCategory(products)).toEqual([{name:"Shoes",totalPrice:320},{name:"Underwere",totalPrice:30}]);
+    }),
+    test("If price of product is of type string then it should be valid", () => {
+        expect(countTotalPriceOfEachCategory([{category: "Rings",price: "200" }])).toEqual([{name:"Rings",totalPrice:200}]);
     })
 })

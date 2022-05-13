@@ -1,5 +1,5 @@
 import { getAllData } from "./getAllData.js";
-import { findUserWithTheMostExpensiveCart } from "./findUserWithTheMostExpensiveCart.js";
+import { getTheMostExpensiveCart } from "./getTheMostExpensiveCart.js";
 import { countTotalPriceOfEachCategory } from "./countTotalPriceOfEachCategory.js"
 import { findFurthestUsers } from "./findFurthestUsers.js"
 
@@ -17,7 +17,7 @@ getAllData(usersUrl, cartsUrl, productsUrl)
     console.log("Products:")
     console.log(products);
     console.log("The most expensive Cart:")
-    console.log(findUserWithTheMostExpensiveCart(users,carts,products));
+    console.log(getTheMostExpensiveCart(users,carts,products));
     console.log("Categories with total price:")
     console.log(countTotalPriceOfEachCategory(products));
     console.log("Furthest users:")
