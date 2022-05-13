@@ -40,7 +40,7 @@ const splitProductsIntoCategories = products =>{
     return categoryDataSets;
 }
 
-//Creates a data structure containing all available product categories and the total value of products of a given category
+//2. Creates a data structure containing all available product categories and the total value of products of a given category
 const countTotalPriceOfEachCategory = products =>{
     const categories = splitProductsIntoCategories(products);
     products.forEach(product => {
